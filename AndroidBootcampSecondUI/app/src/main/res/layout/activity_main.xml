@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your account here"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="372dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/my_edittext"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="    Email or phone number"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <EditText
+        android:layout_width="372dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/my_edittext"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+        android:hint="   Password"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_button"
+        android:backgroundTint="#1FCC79"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or continue with"
+        android:textSize="18dp"
+
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="544dp" />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:background="@drawable/login_button"
+        android:backgroundTint="#FF5842"
+        android:text="Google"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="653dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#1FCC79"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="653dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
